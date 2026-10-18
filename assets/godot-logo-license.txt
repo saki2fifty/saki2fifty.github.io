@@ -1,0 +1,11 @@
+Godot Engine logo
+Copyright (c) 2017 Andrea Calabró
+
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Official source and usage guidance: https://godotengine.org/press/
+License source: https://github.com/godotengine/godot/blob/master/misc/logo/LICENSE.txt
+SVG copied from: https://github.com/saki2fifty/LenzForge/blob/main/docs/images/godot-logo-dark.svg
+
+The SVG is unmodified and displayed at a smaller size with its aspect ratio preserved.
