@@ -109,6 +109,14 @@ h2 { font-weight: 500; font-size: clamp(2rem, 3.3vw, 3rem); line-height: 1.15; l
 .subtle-link { color: var(--muted); padding-block: 0.75rem; font-size: 0.7rem; }
 .subtle-link:hover { color: var(--text); }
 
+.secret-project { margin-top: 4.5rem; padding-top: 4.5rem; border-top: 1px solid var(--line); }
+.secret-heading { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+.secret-heading h2 { margin-top: 0.9rem; }
+.secret-intro { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-block: 1.5rem 2rem; }
+.secret-intro p { max-width: 40rem; color: var(--muted); font-size: 0.95rem; line-height: 1.8; }
+.secret-intro .badge { flex-shrink: 0; }
+.secret-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+
 .modeling-section { background: #1b211c; border-block: 1px solid var(--line); }
 .modeling-intro { max-width: 23rem; }
 .modeling-gallery { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem; }
@@ -176,6 +184,11 @@ h2 { font-weight: 500; font-size: clamp(2rem, 3.3vw, 3rem); line-height: 1.15; l
   .project-copy h2 { font-size: 2.15rem; }
   .stack > div { grid-template-columns: 7rem 1fr; gap: 0.75rem; }
   .image-detail > img { width: 100px; height: 65px; }
+  .secret-project { margin-top: 3rem; padding-top: 3rem; }
+  .secret-heading { align-items: flex-start; gap: 1rem; }
+  .secret-heading .godot-credit img { width: 112px; }
+  .secret-intro { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .secret-gallery { grid-template-columns: 1fr; }
   .modeling-intro { margin-top: 1.5rem; max-width: 30rem; }
   .modeling-gallery { grid-template-columns: 1fr; gap: 2rem; }
   .modeling-image, .modeling-gallery figure:nth-child(2) .modeling-image { aspect-ratio: 1.35; flex: auto; }
