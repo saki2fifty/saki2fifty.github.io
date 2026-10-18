@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The personal portfolio of saki2fifty. More coming soon.">
+    <meta name="theme-color" content="#111816">
+    <title>saki2fifty | Portfolio</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #f0f3ed;
+        background: #111816;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header, main, footer {
+        width: min(100% - 3rem, 72rem);
+        margin-inline: auto;
+      }
+
+      header {
+        padding-block: 1.75rem;
+        border-bottom: 1px solid #34413a;
+        font-size: 0.9rem;
+        font-weight: 650;
+        letter-spacing: 0.02em;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-block: 5rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 1.25rem;
+        color: #b7d5a5;
+        font-size: 0.75rem;
+        font-weight: 650;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 10vw, 7.5rem);
+        line-height: 1.1;
+        letter-spacing: -0.065em;
+        font-weight: 600;
+      }
+
+      h1 span { color: #b7d5a5; }
+
+      .intro {
+        margin: 1.5rem 0 2.5rem;
+        max-width: 30rem;
+        color: #b5bfb8;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.7;
+      }
+
+      a {
+        color: #f0f3ed;
+        text-decoration-color: #b7d5a5;
+        text-underline-offset: 0.4em;
+        line-height: 2.75;
+      }
+
+      a:hover { color: #b7d5a5; }
+      a:focus-visible { outline: 2px solid #b7d5a5; outline-offset: 6px; }
+
+      footer {
+        padding-block: 1.5rem;
+        border-top: 1px solid #34413a;
+        color: #b5bfb8;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>saki2fifty / portfolio</header>
+    <main>
+      <p class="eyebrow">Hello &amp; welcome</p>
+      <h1>saki2fifty<span>.</span></h1>
+      <p class="intro">A little space for my work.<br>My portfolio is coming soon.</p>
+      <a href="https://github.com/saki2fifty">Find me on GitHub <span aria-hidden="true">&#8599;</span></a>
+    </main>
+    <footer>Thanks for stopping by.</footer>
+  </body>
+</html>
