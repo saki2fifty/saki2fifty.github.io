@@ -124,6 +124,7 @@ h2 { font-weight: 500; font-size: clamp(2rem, 3.3vw, 3rem); line-height: 1.15; l
 .modeling-footnote { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--line); font-family: Consolas, monospace; font-size: 0.6rem; color: var(--muted); }
 .contact-section { display: flex; align-items: center; justify-content: space-between; gap: 3rem; margin-top: 4rem; padding: 2.75rem 3rem; background: #242f20; border: 1px solid #43523a; border-radius: 5px; }
 .contact-section h2 { font-size: clamp(1.5rem, 2.7vw, 2.4rem); }
+.contact-note { margin-top: 1rem; color: var(--muted); font-size: 0.875rem; line-height: 1.6; }
 .contact-section .button { flex-shrink: 0; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 3rem; }
 .site-footer .brand { font-size: 1rem; }
