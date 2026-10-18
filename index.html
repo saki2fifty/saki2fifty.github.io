@@ -3,102 +3,177 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The personal portfolio of saki2fifty. More coming soon.">
-    <meta name="theme-color" content="#111816">
-    <title>saki2fifty | Portfolio</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #f0f3ed;
-        background: #111816;
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        min-height: 100svh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header, main, footer {
-        width: min(100% - 3rem, 72rem);
-        margin-inline: auto;
-      }
-
-      header {
-        padding-block: 1.75rem;
-        border-bottom: 1px solid #34413a;
-        font-size: 0.9rem;
-        font-weight: 650;
-        letter-spacing: 0.02em;
-      }
-
-      main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-block: 5rem;
-      }
-
-      .eyebrow {
-        margin: 0 0 1.25rem;
-        color: #b7d5a5;
-        font-size: 0.75rem;
-        font-weight: 650;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(2.5rem, 10vw, 7.5rem);
-        line-height: 1.1;
-        letter-spacing: -0.065em;
-        font-weight: 600;
-      }
-
-      h1 span { color: #b7d5a5; }
-
-      .intro {
-        margin: 1.5rem 0 2.5rem;
-        max-width: 30rem;
-        color: #b5bfb8;
-        font-size: clamp(1rem, 2vw, 1.25rem);
-        line-height: 1.7;
-      }
-
-      a {
-        color: #f0f3ed;
-        text-decoration-color: #b7d5a5;
-        text-underline-offset: 0.4em;
-        line-height: 2.75;
-      }
-
-      a:hover { color: #b7d5a5; }
-      a:focus-visible { outline: 2px solid #b7d5a5; outline-offset: 6px; }
-
-      footer {
-        padding-block: 1.5rem;
-        border-top: 1px solid #34413a;
-        color: #b5bfb8;
-        font-size: 0.8rem;
-      }
-    </style>
+    <meta name="description" content="Game development, real-time tools, and 3D art by saki2fifty. Explore LenzForge Studio, built with Godot; the F.O.R.G.E. C++ game engine; and Blender modeling.">
+    <meta name="theme-color" content="#111613">
+    <meta property="og:title" content="saki2fifty — Game Development & 3D Art">
+    <meta property="og:description" content="Built in code. Shaped in 3D. Godot, native game engine development, and Blender modeling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saki2fifty.github.io/">
+    <meta property="og:image" content="https://saki2fifty.github.io/assets/images/blender-turret.png">
+    <title>saki2fifty | Game Development & 3D Art</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>saki2fifty / portfolio</header>
-    <main>
-      <p class="eyebrow">Hello &amp; welcome</p>
-      <h1>saki2fifty<span>.</span></h1>
-      <p class="intro">A little space for my work.<br>My portfolio is coming soon.</p>
-      <a href="https://github.com/saki2fifty">Find me on GitHub <span aria-hidden="true">&#8599;</span></a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="saki2fifty home"><span class="brand-mark" aria-hidden="true">s<span>/</span></span>saki2fifty<span class="brand-dot">.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#modeling">3D modeling</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="header-github" href="https://github.com/saki2fifty">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Game development &amp; 3D art</p>
+          <h1 id="hero-title">Built in code.<br>Shaped in <span>3D.</span></h1>
+          <p class="hero-intro">I’m saki2fifty. I build real-time experiences, game development tools, and the assets that bring them to life.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="https://github.com/saki2fifty">View GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Godot <span> / </span> C++ <span> / </span> Blender</p>
+        </div>
+        <figure class="hero-art">
+          <a class="hero-viewport image-link" href="assets/images/blender-turret.png" data-lightbox data-caption="Turret study — full assembly and scale reference in Blender." aria-label="Enlarge Blender turret study">
+            <img src="assets/images/blender-turret.png" width="1917" height="1032" alt="Low-poly turret with teal armor, a mounted barrel, and an orange mannequin for scale in Blender." fetchpriority="high">
+            <span class="art-label">IN THE WORKSHOP <span>01 / BLENDER</span></span>
+            <span class="image-expand" aria-hidden="true">↗</span>
+          </a>
+          <figcaption><span>Turret study</span><span>Hard-surface modeling · Blender</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="discipline-strip container" aria-label="Areas of work">
+        <span><span class="strip-index">01</span> Real-time experiences</span>
+        <span><span class="strip-index">02</span> Engine &amp; editor development</span>
+        <span><span class="strip-index">03</span> 3D asset creation</span>
+      </div>
+
+      <section class="projects section container" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Selected projects</p><h2 id="projects-title">Behind the build.</h2></div>
+          <p>Real-time systems, useful tools,<br>and a closer look at how they work.</p>
+        </div>
+
+        <article class="project" id="lenzforge" aria-labelledby="lenzforge-title">
+          <div class="project-gallery">
+            <figure class="project-main-image">
+              <a class="image-link" href="assets/images/lenzforge-live-ar.png" data-lightbox data-caption="LenzForge Studio — live AR facial hair and background effects in the Godot desktop viewer.">
+                <img src="assets/images/lenzforge-live-ar.png" width="1918" height="1028" alt="LenzForge Studio running a live webcam preview with blue simulated facial hair, face tracking controls, and a blurred background." loading="lazy">
+                <span class="image-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="status-dot" aria-hidden="true"></span> Live AR in the Godot viewer</figcaption>
+            </figure>
+            <a class="image-detail" href="assets/images/lenzforge-mannequin.png" data-lightbox data-caption="LenzForge Studio — the 3D mannequin used to shape and preview facial hair.">
+              <img src="assets/images/lenzforge-mannequin.png" width="1915" height="1026" alt="3D mannequin wearing a blue beard in LenzForge’s grooming workspace." loading="lazy">
+              <span><strong>Inside the grooming workspace</strong><span>3D mannequin &amp; strand physics <span aria-hidden="true">↗</span></span></span>
+            </a>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline"><span class="project-number">PROJECT / 01</span><span class="badge badge-godot">Built with Godot</span></div>
+            <h3 id="lenzforge-title">LenzForge Studio</h3>
+            <p class="project-subtitle">Real-time AR. A little more character.</p>
+            <p>A local Windows AR studio that turns a camera feed into an interactive workspace. Built on <strong>Godot</strong>, it combines live face tracking, physics-based beards and mustaches, 3D grooming, and visual effects.</p>
+            <ul class="feature-list">
+              <li>Shape facial hair on a rotatable mannequin, with native strand physics and interactive clippers.</li>
+              <li>Apply background and facial effects, then share the composed feed through a Windows 11 virtual camera.</li>
+            </ul>
+            <dl class="stack">
+              <div><dt>Viewer</dt><dd>Godot · GDScript · C++ GDExtension</dd></div>
+              <div><dt>Tracking &amp; capture</dt><dd>Python · MediaPipe · OpenCV</dd></div>
+              <div><dt>Local controls</dt><dd>Flask · WebSockets · Browser UI</dd></div>
+            </dl>
+            <a class="project-link" href="https://github.com/saki2fifty/LenzForge">Explore LenzForge <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project project-forge" id="forge" aria-labelledby="forge-title">
+          <div class="project-copy">
+            <div class="project-topline"><span class="project-number">PROJECT / 02</span><span class="badge">In development</span></div>
+            <h3 id="forge-title">F.O.R.G.E.</h3>
+            <p class="project-subtitle">Flecs-Oriented Runtime &amp; Game Editor</p>
+            <p>A native <strong>C++20 game engine and editor</strong> for building scenes, writing gameplay, and exporting standalone games. Its entity-component-system architecture centers on Flecs, with Windows and Direct3D 12 as the first editor target.</p>
+            <ul class="feature-list">
+              <li>Author scenes and prefabs, edit C++ components and systems, and test gameplay in a separate Play process.</li>
+              <li>Work with materials, skeletal animation, physics, and asset importing in an integrated editor.</li>
+            </ul>
+            <dl class="stack">
+              <div><dt>Core</dt><dd>C++20 · Flecs ECS · CMake / Ninja</dd></div>
+              <div><dt>Graphics &amp; editor</dt><dd>Diligent Engine / D3D12 · SDL3 · Dear ImGui</dd></div>
+              <div><dt>Game systems</dt><dd>Jolt Physics · Ozz Animation · RmlUi · Recast</dd></div>
+            </dl>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/saki2fifty/F.O.R.G.E.">Explore F.O.R.G.E. <span aria-hidden="true">↗</span></a>
+              <a class="subtle-link" href="https://github.com/saki2fifty/F.O.R.G.E./tree/030624824de9066a66581e899aa9034fdd3c2ccd">Development snapshot <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-gallery">
+            <figure class="project-main-image">
+              <a class="image-link" href="assets/images/forge-scene-editor.png" data-lightbox data-caption="F.O.R.G.E. — scene authoring, transform tools, Inspector, and Content browser. Development build with a validation scene.">
+                <img src="assets/images/forge-scene-editor.png" width="1440" height="900" alt="F.O.R.G.E. editor with a cube validation scene, transform gizmo, scene hierarchy, Inspector, and Content browser." loading="lazy">
+                <span class="image-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="status-dot" aria-hidden="true"></span> Native editor · development build</figcaption>
+            </figure>
+            <a class="image-detail" href="assets/images/forge-material-graph.png" data-lightbox data-caption="F.O.R.G.E. — a material graph connecting a color parameter to surface output, alongside a rendered sphere preview.">
+              <img src="assets/images/forge-material-graph.png" width="1440" height="900" alt="F.O.R.G.E. material graph showing connected nodes and a sphere preview." loading="lazy">
+              <span><strong>A closer look at materials</strong><span>Node graph &amp; shader preview <span aria-hidden="true">↗</span></span></span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="modeling-section" id="modeling" aria-labelledby="modeling-title">
+        <div class="container section">
+          <div class="section-heading">
+            <div><p class="eyebrow">02 / 3D modeling</p><h2 id="modeling-title">From silhouette<br>to the smallest bolt.</h2></div>
+            <div class="modeling-intro"><span class="badge badge-blender">Made in Blender</span><p>Low-poly forms. Mechanical detail. A turret study exploring the full assembly, human scale, and the parts that make it feel built.</p></div>
+          </div>
+          <div class="modeling-gallery">
+            <figure>
+              <a class="image-link modeling-image" href="assets/images/blender-turret.png" data-lightbox data-caption="Blender turret study — full assembly, silhouette, and human scale reference.">
+                <img src="assets/images/blender-turret.png" width="1917" height="1032" alt="Full low-poly turret assembly in Blender, showing the barrel, armor, structural base, and a human scale mannequin." loading="lazy">
+                <span class="image-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span><span class="caption-index">01</span> The full assembly</span><span>Form &amp; scale</span></figcaption>
+            </figure>
+            <figure>
+              <a class="image-link modeling-image" href="assets/images/blender-turret-detail.png" data-lightbox data-caption="Blender turret study — close-up of the control housing, structural panels, brackets, and fasteners.">
+                <img src="assets/images/blender-turret-detail.png" width="1919" height="1034" alt="Close-up of the Blender turret base with paneling, a control housing, support brackets, and large bolts." loading="lazy">
+                <span class="image-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span><span class="caption-index">02</span> Built into the details</span><span>Hard-surface study</span></figcaption>
+            </figure>
+          </div>
+          <div class="modeling-footnote"><span>Blender / 3D modeling / Hard-surface assets</span><span>Open any image for a closer look <span aria-hidden="true">↗</span></span></div>
+        </div>
+      </section>
+
+      <section class="about-section container section" id="about" aria-labelledby="about-title">
+        <div><p class="eyebrow">03 / About my work</p><h2 id="about-title">Curiosity, in<br>playable form.</h2></div>
+        <div class="about-copy"><p>I’m saki2fifty, and my work sits where programming and 3D creation meet. I’m interested in both the things we make and the tools we use to make them.</p><p>That means working in Godot for real-time experiences, building a native game engine in C++, and developing 3D assets in Blender. These projects are a look inside that process.</p><a class="text-link" href="https://github.com/saki2fifty">Follow what I’m building on GitHub <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="contact-section container" aria-labelledby="contact-title">
+        <div><p class="eyebrow">Keep exploring</p><h2 id="contact-title">There’s more in the source.</h2></div>
+        <a class="button button-primary" href="https://github.com/saki2fifty">Visit my GitHub <span aria-hidden="true">↗</span></a>
+      </section>
     </main>
-    <footer>Thanks for stopping by.</footer>
+
+    <footer class="site-footer container"><a class="brand" href="#top">saki2fifty<span class="brand-dot">.</span></a><p>Game development. Real-time tools. 3D art.</p><a class="subtle-link" href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+
+    <dialog class="lightbox" aria-labelledby="lightbox-caption">
+      <div class="lightbox-toolbar"><span>Project gallery</span><button class="lightbox-close" type="button" aria-label="Close image">Close <span aria-hidden="true">×</span></button></div>
+      <img class="lightbox-image" alt="">
+      <p id="lightbox-caption"></p>
+    </dialog>
   </body>
 </html>
